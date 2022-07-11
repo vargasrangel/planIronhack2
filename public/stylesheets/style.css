@@ -1,0 +1,41 @@
+*{
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-repeat: no-repeat;
+  
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+
+}
+.ripple{
+  border-radius: 50%;
+  size: 60%;
+}
+.carouselExampleCaptions{
+  width: 1400px;
+  height: 500px;
+}
+/* HOME PAGE */
+.align-self-start{
+  align-items: flex-end;
+  align-items: center;
+}
+
+/*2 PERSONAS*/
+.d-flex align-items-baseline{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+#background{
+  background-clip: src("/videos/PLAN.mp4");
+    background-size: cover;
+    background-size: 25rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
