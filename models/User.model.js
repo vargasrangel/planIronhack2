@@ -15,6 +15,7 @@ const userSchema = new Schema(
   }
 );
 
+//PRUEBA BRANCH
 const User = model("User", userSchema);
 
 module.exports = User;
