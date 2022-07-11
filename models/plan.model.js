@@ -9,7 +9,7 @@ const eventSchema = new Schema(
     },
     description: String,
     date: String,
-    number-of-people: ["2 people", "more of 2 people"],
+    number_of_people: ["2 people", "more of 2 people"],
     
     // this second object adds extra properties: `createdAt` and `updatedAt`
     timestamps: true,
