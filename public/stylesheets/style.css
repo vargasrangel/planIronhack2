@@ -1,7 +1,9 @@
 *{
   font-family: 'Pathway Gothic One', sans-serif;
   background-repeat: no-repeat;
-  
+  padding: 0;
+    margin: 0;
+    box-sizing: content-box;
 }
 body{
   font-family: 'Courier New', Courier, monospace;
@@ -12,10 +14,7 @@ body{
   border-radius: 50%;
   size: 60%;
 }
-.carouselExampleCaptions{
-  width: 1400px;
-  height: 500px;
-}
+
 /* HOME PAGE */
 .align-self-start{
   align-items: flex-end;
@@ -39,3 +38,12 @@ body{
     background-position: center center;
     background-attachment: fixed;
   }
+  #bigBox{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  a:link, a:visited, a:active {
+    text-decoration:none;
+}
