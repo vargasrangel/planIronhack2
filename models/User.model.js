@@ -14,8 +14,7 @@ const userSchema = new Schema(
     timestamps: true,
   }
 );
-
-//PRUEBA BRANCH
+// PRUEBA BRANCH
 const User = model("User", userSchema);
 
 module.exports = User;
