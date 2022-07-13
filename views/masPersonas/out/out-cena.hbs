@@ -49,11 +49,23 @@
     </div>
   </div>
 </nav>
-    {{{body}}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 
-<h1>🍱  CENA 🍱 </h1>   <!--BORRAR DESPUES, SOLO ES IDENTIFICADOR DE LA PAGINA-->
+<h1>🍱  {{tipo4}} 🍱 </h1>   <!--BORRAR DESPUES, SOLO ES IDENTIFICADOR DE LA PAGINA-->
+
+  {{#if formBar}}
+  <img src="https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/Q7N7Q7FEBZBBVOTO6SORYIXJNQ.jpg">
+  {{/if}}
+
+  {{#if formCena}}
+  <img src="https://www.cuerpomente.com/medio/2019/07/03/cenas-ligeras-faciles_25f5d021_846x846.jpg">
+  {{/if}}
+
+  {{#if formCine}}
+  <img src="https://imagenes.elpais.com/resizer/uTBDiw4Gf7q7wVvJPS_A2Po8r4Y=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/TEN2JGRRNRRV6EY4CZ6SXMPLKU.jpg">
+  {{/if}}
+
 
 <a href="/home/home-page">
   <button> HOME PAGE </button>    <!--BOTÓN AGREGADO SOLO PARA PODER REGRESAR A "HOME PAGE"-->

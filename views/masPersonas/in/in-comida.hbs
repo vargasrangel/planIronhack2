@@ -52,8 +52,24 @@
     {{{body}}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
-<h1>🍱 COMIDA🍱</h1>   <!--BORRAR DESPUES, SOLO ES IDENTIFICADOR DE LA PAGINA-->
+<h1>🍱 {{tipo3}}🍱</h1>   <!--BORRAR DESPUES, SOLO ES IDENTIFICADOR DE LA PAGINA-->
 
+{{#if formComida}}
+<img src="https://www.paulinacocina.net/wp-content/uploads/2020/01/untitled-copy.jpg">
+{{/if}}
+
+{{#if formPelicula}}
+<img src="https://s1.eestatic.com/2017/01/27/actualidad/actualidad_189245206_129755622_1706x960.jpg">
+{{/if}}
+
+{{#if formJuegos}}
+<img src="https://imagenes.elpais.com/resizer/n7dZ6Es_2lvQsYm7SWJtbIsBmTM=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/G3R5NYBJYBFH5LSW7GZX4RYFWA.JPG">
+{{/if}}
+
+    <form action="/registrarPlan/{{tipo}}">
+      <input type="text">
+    </form>
+    
 <a href="/home/home-page">
   <button> HOME PAGE </button>    <!--BOTÓN AGREGADO SOLO PARA PODER REGRESAR A "HOME PAGE"-->
 </a>
