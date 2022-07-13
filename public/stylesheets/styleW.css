@@ -12,7 +12,7 @@
     background-position: center center;
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
-    background-image: src("/images/backgroundWhite");
+    background-image: src("/images/smoke.gif");
   }
 
   .ripple{

@@ -47,3 +47,12 @@ body{
   a:link, a:visited, a:active {
     text-decoration:none;
 }
+#video{
+  background-color: brown;
+  width: 100vw;
+  height: 15vh;
+}
+#video{
+  width: 100vw;
+  height: 15vh;
+}
