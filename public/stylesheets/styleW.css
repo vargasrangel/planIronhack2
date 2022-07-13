@@ -5,14 +5,14 @@
   }
   body {
     height: 800px;
-    background-image: url("/images/backgroundWhite.gif");
+    background-color: black;
     background-size: cover;
     /* background-size: 25rem; */
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
-    background-image: src("/images/backgroundWhite");
+    background-image: src("/images/smoke.gif");
   }
 
   .ripple{

@@ -1,6 +1,8 @@
 <html lang="en">
   <head>
-    <link rel="shortcut icon" href="/images/plan.png"
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="/js/script.js"></script>
+    <link rel="shortcut icon" href="/images/plan.png"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -38,10 +40,14 @@
   </div>
 </nav>
     {{{body}}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
-<br>
-<h1 class="text-center" style="color:white">¿CON CUÁNTAS PERSONAS QUIERES TU PLAN ?</H1>
+
+<!--VIDEO-->
+<div class="video" >
+  <video class="videos" width="1400" height="200" title="Teaser video" allowfullscreen> 
+      <source src="/images/PLAN-teaser.mp4" autoplay />
+ </video>
+</div>
+<h1 class="text-center" style="color:white">For how many people do you want to PLAN?</H1>
 <br>
 <br>
 <div id="box_1">
@@ -67,11 +73,11 @@
       align-items: flex-start;
       align-content: stretch;">
 <!--IMAGEN CON OPCIÓN DE CLICK PARA SELECCIÓN  DOS PERSONAS /-->
-<a class="ripple" href="/dosPersonas/in-dosPersonas" id="opc">
+<a class="ripple" href="/home/home-dosPersonas" id="opc">
       <img
         alt="example"
         class="rounded float-start"
-        src="/images/two.png"
+        src="/images/two.jpg"
       style= 
       "widht: 300px ;
       height: 300px ;
@@ -80,7 +86,7 @@
 </a>
 
 <!--IMAGEN CON OPCIÓN DE CLICK PARA SELECCIÓN 3 o MÁS PERSONAS /-->
-<a class="ripple" href="/dosPersonas/out-dosPersonas" id="opc">
+<a class="ripple" href="/home/home-masPersonas" id="opc">
       <img
         alt="Opción OUT"
         class="rounded float-end"
@@ -110,9 +116,9 @@
       align-items: space-between;
       align-content: space-evenly;">
     <a href="/home/home-dosPersonas">
-      <button type="button" class="btn btn-dark">2 Personas</button>
+      <button type="button" class="btn btn-dark">2 people</button>
     <a href="/home/home-masPersonas">
-      <button type="button" class="btn btn-dark">3 o más personas</button>
+      <button type="button" class="btn btn-dark">3 or more</button>
     </a>
   </div>
 </div>

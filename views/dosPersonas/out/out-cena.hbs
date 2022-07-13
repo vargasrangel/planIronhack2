@@ -49,10 +49,31 @@
     </div>
   </div>
 </nav>
-    {{{body}}}
+    {{!-- {{{body}}} --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
-    <h1>🍱  CENA 🍱</h1>   <!--BORRAR DESPUES, SOLO ES IDENTIFICADOR DE LA PAGINA-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+
+    <h1>🔊 {{tipo2}} 🔊</h1>   <!--BORRAR DESPUES, SOLO ES IDENTIFICADOR DE LA PAGINA-->
+ 
+    {{#if formBar}}
+    <img src="https://resizer.otstatic.com/v2/photos/wide-huge/1/31920150.jpg">
+    {{/if}}
+
+    {{#if formCena}}
+    <img src="https://www.comedera.com/wp-content/uploads/2022/02/Cena-de-San-Valentin-.shutterstock_603385892-1.jpg">
+    {{/if}}
+
+    {{#if formCine}}
+    <img src="https://los40.com/los40/imagenes/2022/04/29/cinetv/1651231525_633128_1651231738_gigante_normal.jpg">
+    {{/if}}
+ 
+      <form action="/registrarPlan/{{tipo}}">
+      <input type="text">
+    </form>
+ 
  <br>
   </body>
 </html>
