@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+<!--NAVBAR -->
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">P L A N</a>
@@ -22,18 +23,18 @@
           <a class="nav-link active" aria-current="page" href="/home/home-page">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/home/home-dosPersonas">Dos personas</a>
+          <a class="nav-link" href="#">Algo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/home/home-masPersonas">Más de dos personas</a>
+          <a class="nav-link" href="#">Algo más</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Who is coming to the PLAN?
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/home/home-dosPersonas">Two people</a></li>
+            <li><a class="dropdown-item" href="/home/home-masPersonas">More than two people</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
@@ -49,26 +50,111 @@
     </div>
   </div>
 </nav>
-    {{{body}}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
-
-<h1>🔨 ELIGE UNA CATEGORIA PARA 3 PERSONAS O MÁS EN -OUT-🔨</h1>   <!--BORRAR DESPUES, SOLO ES IDENTIFICADOR DE LA PAGINA-->
-<h2>   Aqui escojemos la categoria del plan</h2>
-
-  <a href="/masPersonas/out?tipo4=cena">
-    <button type="button" class="btn btn-primary">CENA</button>
+    <div id="bigBox">
+    <br>
+     {{!-- <h1 style="color:white; justify-content: center; 	align-items: center;">
+      Choose a category
+      </h1>    --}}
+      <img src="/images/category.png" class="img-fluid" alt="CHOOSE A CATEGORY">
+ <br>
+ <br>
+<!--CATEGORÍAS-->
+<div class="d-flex flex-row mb-3">
+  
+  <!--Primera categoría: COMIDA-->
+  <div class="p-2">
+    <a class="ripple" href="/masPersonas/out?tipo4=cena" id="opc">
+      <img
+        alt="DINNER OUT";
+        class="rounded float-end";
+        src="/images/masPersonas/dinnerOUT.jpg";
+        style= 
+      "widht: 300px ;
+      height: 300px ;
+      align: center; 
+      border-radius:150px"
+  />
+  </div>
+  <div class="p-2">
+    <div style="align: center">
+        <h1 style="color: white">Dinner</h1>
+      <br>
+        <h4 style="color: white">Try having a night in with your friends and choose one of the multiple options for your dinner</h4>
+    </div>
+    <div>
+      <br>
+      <br>
+      <a href="/masPersonas/out?tipo4=cena">
+      <button type="button" class="btn btn-light">DINNER OPTIONS</button>
+    </div>
   </a>
-    <a href="/masPersonas/out?tipo4=bar">
-      <button type="button" class="btn btn-secondary">BAR</button>
+  </div>
+  <div class="p-2"></div>
+</div>
+<br>
+<br>
+  <!--Segunda categoría: PELÍCULAS-->
+<div class="d-flex flex-row-reverse">
+  <div class="p-2">
+    <a class="ripple" href="/masPersonas/out?tipo4=cine" id="opc">
+      <img
+        alt="MOVIE NIGHT";
+        class="rounded float-end";
+        src="/images/masPersonas/movies3.jpg";
+        style= 
+      "widht: 300px ;
+      height: 300px ;
+      align: center; 
+      border-radius:150px"
+      />
+  </div>
+  <div class="p-2">
+    <div style="align-content: left">
+        <h1 style="color: white">Movie night</h1>
+      <br>
+        <h4 style="color: white">What a perfect plan to have a movie night with your friends. </h4>
+          <h4 style="color: white">Choose a movie, have your popcorns!</h4>
+    </div>
+      <br>
+      <br>
+      <br>
+        <a href="/masPersonas/out?tipo4=cine">
+    <button type="button" class="btn btn-light">MOVIES</button>
     </a>
-      <a href="/masPersonas/out?tipo4=cine">
-        <button type="button" class="btn btn-secondary">CINE</button>
+  </div>
+</div>
+      <br>
+      <br>
+      <br>
+  <!--Tercer categoría: BAR-->
+<div class="d-flex flex-row mb-3">
+  <div class="p-2"> <a class="ripple" href="/masPersonas/out?tipo4=bar" id="opc">
+      <img
+        alt="GAME NIGHT";
+        class="rounded float-end";
+        src="/images/masPersonas/bar3.jpg";
+        style= 
+      "widht: 300px ;
+      height: 300px ;
+      align: center; 
+      border-radius:150px"
+      /></div>
+  <div class="p-2">
+            <div style="align: center">
+        <h1 style="color: white">Bar</h1>
+      <br>
+        <h4 style="color: white">A few drinks are never too much. </h4>
+        <h4 style="color: white">Taste from a beer to a martini in the best bars in the city.</h4>
+    </div>
+      <br>
+      <br>
+      <br>
+          <a href="/masPersonas/out?tipo4=bar">
+      <button type="button" class="btn btn-light">BAR</button>
       </a>
-
-  <a href="/home/home-page">
-    <button> HOME PAGE </button>    <!--BOTÓN AGREGADO SOLO PARA PODER REGRESAR A "HOME PAGE"-->
-  </a>
-
+  </div>
+</div>
 </body>
 </html>
