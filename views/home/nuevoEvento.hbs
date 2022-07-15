@@ -1,9 +1,84 @@
-<h1>NUEVO EVENTO</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/styleH.css" />
 
-<ul class="list-group">
-  <li class="list-group-item"><label>Name: </label> {{name}} </li>
-  <li class="list-group-item"><label>Description: </label> {{description}} </li>
-  <li class="list-group-item"><label>Date: </label>  {{date}} </li>
-  <li class="list-group-item"><label>Number Of People: </label> {{numberOfPeople}} </li>
-  <li class="list-group-item">AQUI VA EL MAPA</li>
-</ul>
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home/home-page">P L A N</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home/home-page">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="/home/misEventos">My Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</head>
+<body>
+  
+
+<br>
+<h1 class="text-center" style="color:#FFFFFF ;">Event Details</h1>
+
+<div class="container" >
+  <div class="row">
+    <div class="col-4"></div>
+      <div class="col-4">
+        {{!-- <ul class="card" style="width: 18rem;">
+          <li class="list-group-item"><label>Name: </label> {{name}} </li>
+          <li class="list-group-item"><label>Description: </label> {{description}} </li>
+          <li class="list-group-item"><label>Date: </label>  {{date}} </li>
+          <li class="list-group-item"><label>Number Of People: </label> {{numberOfPeople}} </li>
+          <li class="list-group-item"><label>LAT </label>{{lat}}</li>
+          <li class="list-group-item"><label>LONG </label>{{lng}}</li>
+        </ul> --}}
+
+<div class="center">
+      <div class="d-flex p-2">
+        <div class="card" style="width: 18rem; opacity:0.5;">
+          <div class="card-body">
+            <h1 class="card-title">{{name}}</h1>
+            <h4 class="card-text"> {{date}} </h4>
+            <h5 class="card-text"> {{numberOfPeople}} </h5>
+            <p class="card-text"> {{description}} </p>
+            <p class="card-text"> {{address}} </p>
+            
+            
+            <a href="/home/misEventos">
+              <button type="button" class="btn btn-dark">My Events</button>
+            </a>
+            
+      </div>
+
+</div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    <div class="col-4"></div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+

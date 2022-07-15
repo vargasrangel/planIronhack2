@@ -35,7 +35,7 @@ router.get("/home/home-masPersonas", (req, res,) => {
     })
 
 
-//Ruta para guarda el EVENTO/PLAN
+//Ruta para GUARDAR el EVENTO/PLAN
 router.post("/registrarPlan/:tipo", (req, res) => {
   Event.create(req.body)
   .then(nuevoEvento => {
@@ -44,6 +44,7 @@ router.post("/registrarPlan/:tipo", (req, res) => {
   })
   .catch(console.log)
 })
+
 
 
 module.exports = router;

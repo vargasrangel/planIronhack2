@@ -56,11 +56,43 @@ body{
   width: 100vw;
   height: 15vh;
 }
+
 #map {
   height: 400px;
-  width: 100%;
+  width: 800px;
+  margin: 4px 2em 0 auto;
+  align-items: center;
+	align-content: center;
  }
+
+
+
  #img{
   padding: 50px 35px;
 
+}
+
+.center{
+  text-align: center;
+}
+/* .center{
+  text-align: center;
+} */
+
+.reus{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+  margin: 1em auto 2em;
+}
+
+.card-body {
+  flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: center;
+align-content: space-evenly;
 }

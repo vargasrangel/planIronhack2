@@ -1,0 +1,35 @@
+*{
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-repeat: no-repeat;
+  
+}
+body {
+  height: 800px;
+  background-image: url("/images/events.png");
+  background-size: cover;
+  /* background-size: 25rem; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: src("/images/backgroundWhite");
+}
+
+.ripple{
+  border-radius: 50%;
+  size: 60%;
+}
+
+.reus{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+  margin: 1em auto 2em;
+}
+
+.card-body {
+justify-content: space-around;
+align-items: center;
+align-content: space-evenly;
+}
